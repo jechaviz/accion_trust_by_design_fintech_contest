@@ -1,0 +1,40 @@
+{
+  "version": "accion_trust_form_payload.v1",
+  "track": "student_partner_track",
+  "status": "partner_required_before_submit",
+  "final_submit_allowed": false,
+  "organization": {
+    "legal_name": "PARTNER_REQUIRED",
+    "trade_name": "PARTNER_REQUIRED",
+    "year_founded": "PARTNER_REQUIRED",
+    "type": "Fintech company",
+    "website": "PARTNER_REQUIRED",
+    "markets": ["PARTNER_REQUIRED"]
+  },
+  "contact": {
+    "name": "PARTNER_REQUIRED",
+    "title": "PARTNER_REQUIRED",
+    "function": "PARTNER_REQUIRED",
+    "email": "PARTNER_REQUIRED",
+    "phone": "PARTNER_REQUIRED"
+  },
+  "solution": {
+    "name": "Trust Layer for Inclusive Fintech",
+    "one_sentence": "Trust Layer for Inclusive Fintech embeds transparency, fraud warnings, consent checks, complaint resolution, and gender-disaggregated trust metrics into live digital financial journeys serving women customers.",
+    "deployed_to_customers": "PARTNER_REQUIRED",
+    "customer_range": "PARTNER_REQUIRED",
+    "women_using_solution": "PARTNER_REQUIRED",
+    "women_customer_pct_range": "PARTNER_REQUIRED",
+    "annual_revenue_range": "PARTNER_REQUIRED"
+  },
+  "evidence": {
+    "synthetic_report": "../evidence/trust_report.json",
+    "partner_live_export": "PARTNER_REQUIRED",
+    "application_draft": "../application/application_draft.md"
+  },
+  "legal_gate": {
+    "authorized_representative_confirmed": false,
+    "official_rules_accepted_by_partner": false,
+    "synthetic_data_replaced": false
+  }
+}

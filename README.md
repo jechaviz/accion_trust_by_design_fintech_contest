@@ -1,47 +1,36 @@
 # Accion Trust by Design Fintech Challenge 2026
 
-Tag: `worth_it partner`
+Track: `student_partner_track`
 
-Link: https://www.accion.org/trust-by-design-fintech-challenge/
+Product thesis: `Trust Layer for Inclusive Fintech`, a Vlang trust engine plus
+Vue reporting cockpit that a live fintech partner can embed into customer
+journeys to measure and improve trust, safety, transparency, consent, complaint
+resolution, and gender-disaggregated outcomes.
 
-## Fechas
+Official link: https://www.accion.org/trust-by-design-fintech-challenge/
 
-- Applications open: 2026-04-20.
-- Deadline extendido: 2026-06-05 23:59 EDT.
-- Finalists informed: 2026-06-15.
-- Winners notified: by 2026-08-14.
+## Production Packet
 
-## Beneficio
+- [Official requirements](docs/official_requirements.md)
+- [Eligibility checklist](docs/eligibility_checklist.md)
+- [Partner fintech requirement](docs/partner_fintech_required.md)
+- [Trust layer MVP](docs/trust_layer_mvp.md)
+- [Gender-disaggregated metrics](docs/gender_disaggregated_metrics.md)
+- [Application draft](application/application_draft.md)
+- [Submission packet](submission/SUBMISSION_PACKET.md)
+- [Risks](docs/risks.md)
+- [Express plan](docs/plan_express.md)
+- [WAIBAv automation](automation/waiba/accion_submission_dry_run.playbook.yml)
 
-- USD 94k total ARV.
-- Grand Prize USD 50k.
-- Tres finalist awards de USD 10k.
-- Summit ticket + travel/hotel para ganadores.
+## Local Build Surfaces
 
-## Requisitos
+- V product module: `C:\git\v_projects\accion_trust_by_design_fintech`
+- Vue reporting demo: `C:\git\websites\accion_trust_by_design_fintech`
+- Reusable generator profile: `C:\git\v_projects\contestops_ai`
 
-- No individuos; aplica una fintech/organizacion.
-- Solucion digital ya live/in-market.
-- Financial inclusion, confianza, seguridad, transparencia, mujeres customers.
-- Uso de gender-disaggregated data.
+## Readiness Position
 
-## Por que vale
-
-Aunque pide solucion live, el criterio de "dias" sirve si ya se empaqueta un
-modulo dentro de una fintech/partner: fraud prompts, transparency layer,
-explainable repayment/risk, complaint intelligence, trust dashboard.
-
-## Producto recomendado
-
-`Trust Layer for Inclusive Fintech`: SDK/dashboard que mide y mejora confianza:
-claridad de tarifas, alertas de fraude, lenguaje comprensible, datos por genero.
-
-## Sprint de 6 dias
-
-1. Dia 1: identificar fintech/partner o producto existente.
-2. Dia 2: definir metricas de trust/safety.
-3. Dia 3: prototipo dashboard + prompts.
-4. Dia 4: data schema gender-disaggregated.
-5. Dia 5: case study con datos sinteticos o partner.
-6. Dia 6: application.
-
+The package is production-ready for partner review and authorized application
+entry. Final external submission must be performed by an eligible live fintech
+or its authorized representative because the official rules require legal
+authority to bind the entrant and live in-market evidence.

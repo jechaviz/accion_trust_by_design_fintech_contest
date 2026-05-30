@@ -1,0 +1,19 @@
+version: accion_trust_application_guide_inventory.v1
+question_count: 42
+sections:
+  - id: a
+    title: General Information
+    questions: 1-14
+  - id: b
+    title: Solution and Traction Snapshot
+    questions: 15-29
+  - id: c
+    title: Outcomes, Trust, and Harm Reduction
+    questions: 30-37
+  - id: d
+    title: Gender-Informed Product Design
+    questions: 38-42
+notes:
+  - Microsoft Forms does not save progress.
+  - Required answers must be prepared offline first.
+  - Final submit requires partner authority and partner data.

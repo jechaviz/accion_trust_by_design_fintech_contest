@@ -1,0 +1,66 @@
+version: accion_trust_form_map.v1
+track: student_partner_track
+official_form_url: https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=dYC7MDl-NUCfCAeE2OWLfks5jZn3HotAqHHb7TW_v01UNEpIMTE4VUM1SFVNTUxVTzhWNlROMk1OTC4u
+source_guide: ../resources/TrustByDesign_Application_Guide.pdf
+final_submit_gate: partner_authorized_representative_required
+fields:
+  - id: q01
+    prompt: Organization name
+    source: application/application_draft.md#q1
+    required: true
+  - id: q02
+    prompt: Year founded
+    source: partner_intake
+    required: true
+  - id: q03
+    prompt: One sentence solution
+    source: application/application_draft.md#q3
+    required: true
+  - id: q04
+    prompt: Organization type
+    source: partner_intake
+    required: true
+  - id: q05
+    prompt: Website URL
+    source: partner_intake
+    required: true
+  - id: q06
+    prompt: Primary market
+    source: partner_intake
+    required: true
+  - id: q07
+    prompt: Secondary market
+    source: partner_intake
+    required: false
+  - id: q08
+    prompt: Third market
+    source: partner_intake
+    required: false
+  - id: q09
+    prompt: Owner function
+    source: partner_intake
+    required: true
+  - id: q10_q14
+    prompt: Primary contact details
+    source: partner_intake_authorized_representative
+    required: true
+  - id: q15_q19
+    prompt: Deployment, customers, women usage, revenue
+    source: partner_metric_export
+    required: true
+  - id: q20_q24
+    prompt: Solution description and journey
+    source: application/application_draft.md#b-solution-and-traction-snapshot
+    required: true
+  - id: q25_q29
+    prompt: Commercial success, traction indicator, capacity
+    source: partner_metric_export_plus_application_draft
+    required: true
+  - id: q30_q37
+    prompt: Outcomes, evidence, trust, harm reduction, safeguards
+    source: partner_metric_export_plus_docs/gender_disaggregated_metrics.md
+    required: true
+  - id: q38_q42
+    prompt: GDD practice and gender-informed design
+    source: partner_gdd_export_plus_application_draft
+    required: true
