@@ -1,0 +1,23 @@
+﻿{
+	"capability":	{
+		"raw":	"run:waiba@automation[env=debug,playbook=C:\\git\\v_projects\\contests\\worth_it\\accion_trust_by_design_fintech\\automation\\waiba\\accion_edge_authorized_session.playbook.yml]",
+		"verb":	"run",
+		"object":	"waiba",
+		"scope":	"automation",
+		"constraints":	{
+			"env":	"debug",
+			"playbook":	"C:\\git\\v_projects\\contests\\worth_it\\accion_trust_by_design_fintech\\automation\\waiba\\accion_edge_authorized_session.playbook.yml"
+		}
+	},
+	"risk":	"medium",
+	"decision":	"ask",
+	"allowed":	false,
+	"reason":	"WAIBA debug runs can execute local automation and need approval",
+	"policy":	"default-0.10.3",
+	"rule":	"ask-waiba-debug-run",
+	"trace":	[{
+			"rule":	"ask-waiba-debug-run",
+			"effect":	"ask",
+			"reason":	"WAIBA debug runs can execute local automation and need approval"
+		}]
+}

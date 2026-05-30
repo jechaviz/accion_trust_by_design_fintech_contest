@@ -2,7 +2,7 @@
 
 Status line:
 
-`[prod 100%][Application-ready Package v1.1.0][Competitive Upgrade 100%][technical_debt 0%][external_submission_ready 100%]`
+`[prod 100%][Application-ready Package v1.2.0][Profile-Safe Upgrade 100%][technical_debt 0%][external_submission_ready 100%]`
 
 ## Objective
 
@@ -28,6 +28,23 @@ it is ready for partner-authorized application entry.
 - Partner close kit: `docs/partner_close_kit.md`
 - Stage 2 interview brief: `docs/stage2_interview_brief.md`
 - 48-hour win plan: `docs/forty_eight_hour_win_plan.md`
+- Profile-safe operator plan: `docs/profile_safe_operator_plan.md`
+- Outreach execution queue: `docs/outreach_execution_queue.md`
+- Partner intake packet: `submission/partner_intake_packet.md`
+- VImport redacted profile manifest: `evidence/profile/yo_profile_manifest.redacted.json`
+- VImport profile application packet: `evidence/profile/accion_profile_application_packet.json`
+- Secure-input template: `submission/private/accion_profile_secure_inputs.template.json`
+- Authorized Edge/Gmail WAIBAv playbook: `automation/waiba/accion_edge_authorized_session.playbook.yml`
+
+## v1.2.0 Profile-Safe Upgrade
+
+- Added Accion-specific account and browser-session refs to the local `yo`
+  authorization module.
+- Generated redacted VImport profile evidence with no raw profile content.
+- Added Gmail outreach, partner intake, secure-input, and Edge-session operator
+  runbooks.
+- Preserved the final submit gate until a live fintech partner authorizes the
+  official Microsoft Forms submission.
 
 ## Final External Submit Gate
 

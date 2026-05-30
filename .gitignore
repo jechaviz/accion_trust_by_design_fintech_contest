@@ -1,0 +1,7 @@
+# Keep templates and receipts public-safe, but never commit filled private inputs.
+submission/private/*.local.json
+submission/private/*.filled.json
+submission/private/*secrets*.json
+submission/private/*password*.json
+*.secret.json
+*.local.env

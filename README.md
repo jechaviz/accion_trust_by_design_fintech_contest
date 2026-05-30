@@ -22,9 +22,15 @@ Official link: https://www.accion.org/trust-by-design-fintech-challenge/
 - [Judge score optimizer](docs/judge_score_optimizer.md)
 - [Partner close kit](docs/partner_close_kit.md)
 - [Stage 2 interview brief](docs/stage2_interview_brief.md)
+- [Profile-safe operator plan](docs/profile_safe_operator_plan.md)
+- [Outreach execution queue](docs/outreach_execution_queue.md)
+- [Partner intake packet](submission/partner_intake_packet.md)
 - [Risks](docs/risks.md)
 - [Express plan](docs/plan_express.md)
 - [WAIBAv automation](automation/waiba/accion_submission_dry_run.playbook.yml)
+- [Authorized Edge/Gmail session check](automation/waiba/accion_edge_authorized_session.playbook.yml)
+- [WAIBAv profile-session receipt](evidence/waibav_profile_session_receipt.md)
+- [Veloclaw policy receipt](evidence/veloclaw_policy_receipt.md)
 
 ## Local Build Surfaces
 
@@ -48,3 +54,11 @@ The v1.1.0 package adds a judge-room layer:
 - evidence lineage from every claim to required proof;
 - 48-hour partner close plan;
 - web demo Judge Room tab at `C:\git\websites\accion_trust_by_design_fintech`.
+
+## Profile-Safe Upgrade
+
+The v1.2.0 package connects the submission hub to the local `yo` profile through
+VImport redacted evidence, authorized Edge/Gmail session refs, and WAIBAv
+operator checks. It adds partner outreach execution, secure-input gates, and
+profile receipts while keeping raw credentials and browser passwords out of
+repos, logs, screenshots, and playbooks.

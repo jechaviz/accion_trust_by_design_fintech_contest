@@ -1,0 +1,98 @@
+metadata:
+  name: accion-trust-edge-authorized-session
+  description: Validate profile-safe authorized-session readiness for Accion Trust by Design without exporting credentials or submitting external forms.
+
+variables:
+  PROJECT_DIR: "${ROOT_PLAYBOOK_DIR}/../.."
+  PROFILE_AUTH: "C:/git/customers/yo/profile/modules/external_account_creation_authorizations.yml"
+  PROFILE_MANIFEST: "${PROJECT_DIR}/evidence/profile/yo_profile_manifest.redacted.json"
+  PROFILE_PACKET: "${PROJECT_DIR}/evidence/profile/accion_profile_application_packet.json"
+  SECURE_TEMPLATE: "${PROJECT_DIR}/submission/private/accion_profile_secure_inputs.template.json"
+  PAYLOAD_TEMPLATE: "${PROJECT_DIR}/submission/accion_form_payload.template.json"
+  PARTNER_INTAKE: "${PROJECT_DIR}/submission/partner_intake_packet.md"
+  TRACE_DIR: "${PROJECT_DIR}/automation/evidence/profile-session"
+  TRACE_PATH: "${TRACE_DIR}/accion_edge_authorized_session_trace.jsonl"
+  OFFICIAL_FORM_URL: "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=dYC7MDl-NUCfCAeE2OWLfks5jZn3HotAqHHb7TW_v01UNEpIMTE4VUM1SFVNTUxVTzhWNlROMk1OTC4u"
+  GMAIL_URL: "https://mail.google.com/mail/u/0/#inbox"
+
+steps:
+  prod:
+    - action: FS.EnsureDir
+      params:
+        path: "${TRACE_DIR}"
+
+    - action: FS.Exists
+      register: profile_auth_exists
+      params:
+        path: "${PROFILE_AUTH}"
+
+    - action: FS.Exists
+      register: profile_manifest_exists
+      params:
+        path: "${PROFILE_MANIFEST}"
+
+    - action: FS.Exists
+      register: profile_packet_exists
+      params:
+        path: "${PROFILE_PACKET}"
+
+    - action: FS.Exists
+      register: secure_template_exists
+      params:
+        path: "${SECURE_TEMPLATE}"
+
+    - action: FS.Exists
+      register: payload_template_exists
+      params:
+        path: "${PAYLOAD_TEMPLATE}"
+
+    - action: FS.Exists
+      register: partner_intake_exists
+      params:
+        path: "${PARTNER_INTAKE}"
+
+    - action: Trace.Event
+      params:
+        path: "${TRACE_PATH}"
+        name: "profile_safe_readiness"
+        message: "Checked profile bindings, redacted VImport evidence, payload, and partner intake packet."
+        data:
+          default_login_email: "jesus.cgalaviz@gmail.com"
+          profile_auth_exists: "${profile_auth_exists}"
+          profile_manifest_exists: "${profile_manifest_exists}"
+          profile_packet_exists: "${profile_packet_exists}"
+          secure_template_exists: "${secure_template_exists}"
+          payload_template_exists: "${payload_template_exists}"
+          partner_intake_exists: "${partner_intake_exists}"
+          raw_credentials_allowed: false
+          final_submit_allowed: false
+
+    - action: Browser.Open
+      register: gmail_contract
+      params:
+        mock: true
+        url: "${GMAIL_URL}"
+
+    - action: Browser.Open
+      register: form_contract
+      params:
+        mock: true
+        url: "${OFFICIAL_FORM_URL}"
+
+    - action: Trace.Event
+      params:
+        path: "${TRACE_PATH}"
+        name: "authorized_session_contract"
+        message: "Edge/Gmail session may be used for outreach or draft preparation; final submit remains gated."
+        data:
+          gmail_opened: "${gmail_contract.opened}"
+          form_opened: "${form_contract.opened}"
+          browser_password_export_allowed: false
+          account_creation_password_policy: "vault_refs_only"
+          partner_authority_required: true
+          submit_gate: "explicit_partner_representative_approval_required"
+
+  debug:
+    - action: Note
+      params:
+        text: "Accion Edge authorized-session playbook is parseable."
