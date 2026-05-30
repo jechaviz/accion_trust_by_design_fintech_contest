@@ -23,3 +23,7 @@ Women customer share in sample: 75%
 - pass: Complaint or issue-resolution path exists. Evidence: `complaint handling evidence`.
 - pass: Entrant and applicant are outside comprehensively sanctioned jurisdictions. Evidence: `OFAC screen`.
 - partner_required: Live partner metrics can replace synthetic sample data. Evidence: `partner metric export`.
+- pass: Women are not treated as a marketing segment only; the solution has GDD-backed women-customer evidence. Evidence: `GDD integrity check`.
+- pass: The solution can show at least one concrete path from trust signal to harm reduction. Evidence: `event-level harm prevention`.
+- pass: Complaint and issue resolution are visible as customer-protection mechanisms. Evidence: `complaint event evidence`.
+- pass: Trust instrumentation covers multiple customer-journey moments instead of a narrow disclosure screen. Evidence: `journey coverage check`.

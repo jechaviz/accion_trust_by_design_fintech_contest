@@ -23,6 +23,12 @@ The application must be submitted by, or with explicit authority from, a live fi
 - Generated checklist: `generated/accion_RULES_CHECKLIST.generated.md`
 - Generated evidence manifest: `generated/accion_EVIDENCE.generated.md`
 - Generated scorecard: `generated/accion_JUDGE_SCORECARD.generated.md`
+- Competitive battlecard: `docs/competitive_battlecard.md`
+- Judge optimizer: `docs/judge_score_optimizer.md`
+- Evidence lineage: `docs/evidence_lineage.md`
+- Stage 2 interview brief: `docs/stage2_interview_brief.md`
+- 48-hour win plan: `docs/forty_eight_hour_win_plan.md`
+- V competitive report: `evidence/competitive_report.json`
 - Application draft: `application/application_draft.md`
 - Form map: `submission/form_map.yml`
 - Automation dry-run: `automation/waiba/accion_submission_dry_run.playbook.yml`

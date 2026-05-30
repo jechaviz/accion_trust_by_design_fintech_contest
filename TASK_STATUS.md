@@ -2,7 +2,7 @@
 
 Status line:
 
-`[prod 100%][Application-ready Package v1.0.0][Finalized 100%][technical_debt 0%][external_submission_ready 100%]`
+`[prod 100%][Application-ready Package v1.1.0][Competitive Upgrade 100%][technical_debt 0%][external_submission_ready 100%]`
 
 ## Objective
 
@@ -22,6 +22,12 @@ it is ready for partner-authorized application entry.
 - Vue reporting demo: `C:\git\websites\accion_trust_by_design_fintech`
 - WAIBAv automation: `automation/waiba/accion_submission_dry_run.playbook.yml`
 - Generated application packet: `generated/accion_APPLICATION_PACKET.generated.md`
+- Competitive battlecard: `docs/competitive_battlecard.md`
+- Judge score optimizer: `docs/judge_score_optimizer.md`
+- Evidence lineage: `docs/evidence_lineage.md`
+- Partner close kit: `docs/partner_close_kit.md`
+- Stage 2 interview brief: `docs/stage2_interview_brief.md`
+- 48-hour win plan: `docs/forty_eight_hour_win_plan.md`
 
 ## Final External Submit Gate
 
