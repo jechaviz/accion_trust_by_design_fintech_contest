@@ -1,16 +1,17 @@
 {
-  "version": "accion_trust_web_demo_receipt.v1",
+  "version": "accion_trust_web_demo_receipt.v1.1",
   "ok": true,
   "url": "http://127.0.0.1:5178/",
   "web_repo": "C:\\git\\websites\\accion_trust_by_design_fintech",
   "framework": "Vue3 CDN + SFC + UnoCSS",
   "data_source": "C:\\git\\websites\\accion_trust_by_design_fintech\\data\\trust_report.json",
   "desktop_screenshot": "C:\\git\\websites\\accion_trust_by_design_fintech\\automation_screenshot_ready.png",
+  "judge_room_screenshot": "C:\\git\\websites\\accion_trust_by_design_fintech\\automation_screenshot_judge.png",
   "mobile_screenshot": "C:\\git\\websites\\accion_trust_by_design_fintech\\automation_screenshot_mobile.png",
   "qa": [
     "powershell -NoProfile -ExecutionPolicy Bypass -File scripts\\line_guard.ps1",
     "powershell -NoProfile -ExecutionPolicy Bypass -File tests\\ui_smoke.ps1",
     "npx playwright screenshot --wait-for-selector 'text=Gender-Disaggregated Metrics' --viewport-size=390,844 http://127.0.0.1:5178/ automation_screenshot_mobile.png"
   ],
-  "notes": "The demo shows synthetic trust-engine sample data and partner-required submission gates."
+  "notes": "The demo shows synthetic trust-engine sample data, partner-required submission gates, and a competitive Judge Room."
 }

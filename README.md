@@ -18,6 +18,10 @@ Official link: https://www.accion.org/trust-by-design-fintech-challenge/
 - [Gender-disaggregated metrics](docs/gender_disaggregated_metrics.md)
 - [Application draft](application/application_draft.md)
 - [Submission packet](submission/SUBMISSION_PACKET.md)
+- [Competitive battlecard](docs/competitive_battlecard.md)
+- [Judge score optimizer](docs/judge_score_optimizer.md)
+- [Partner close kit](docs/partner_close_kit.md)
+- [Stage 2 interview brief](docs/stage2_interview_brief.md)
 - [Risks](docs/risks.md)
 - [Express plan](docs/plan_express.md)
 - [WAIBAv automation](automation/waiba/accion_submission_dry_run.playbook.yml)
@@ -34,3 +38,13 @@ The package is production-ready for partner review and authorized application
 entry. Final external submission must be performed by an eligible live fintech
 or its authorized representative because the official rules require legal
 authority to bind the entrant and live in-market evidence.
+
+## Competitive Upgrade
+
+The v1.1.0 package adds a judge-room layer:
+
+- weighted Stage 1 competitive score: `evidence/competitive_report.json`;
+- likely rival battlecard and counters;
+- evidence lineage from every claim to required proof;
+- 48-hour partner close plan;
+- web demo Judge Room tab at `C:\git\websites\accion_trust_by_design_fintech`.
